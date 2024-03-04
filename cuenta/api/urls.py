@@ -3,6 +3,6 @@ from cuenta.api.views import CuentaList,CuentaDetail
 
 urlpatterns = [
     path('list/',CuentaList.as_view(), name='cuentalist'),
-    path('<int:pk>', CuentaDetail.as_view())
+    path('<int:pk>', CuentaDetail.as_view(), name='cuentaDetail')
 ]
 
